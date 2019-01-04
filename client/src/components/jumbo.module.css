@@ -1,0 +1,20 @@
+
+  .home {
+    background-image: url(../img/blender.jpg);
+    background-size: cover;
+    background-position: 0% 50%; 
+    height: 60vh;
+  }
+  .survey {
+    background-image: url(../img/survey_2.jpg);
+    background-size: cover;
+    background-position: 0% 50%; 
+    height: 60vh;
+  } 
+
+  .about {
+    background-image: url(../img/about.jpg);
+    background-size: cover;
+    background-position: 0% 50%; 
+    height: 100vh;
+  } 
