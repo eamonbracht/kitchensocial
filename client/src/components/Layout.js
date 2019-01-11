@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
-import Navigation from './Navigation';
 import Footer from './FooterPage';
+import Navigation from './Navigation';
 // import '../index.css';
 class Layout extends Component {
+    state = {
+    };
     render() {
     return (
         <div>
-            <div>
-                <Navigation/>
-            </div>
+
+                <Navigation />
+
             <div>
                 {this.props.children}
             </div>
-            <div>
+
                 <Footer/>
-            </div>
+
         </div>
         );
     }

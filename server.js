@@ -12,7 +12,6 @@ const router = express.Router();
 
 // this is our MongoDB database
 const dbRoute = "mongodb://eamonbracht:Smokebomb1@ds243054.mlab.com:43054/kitchensocial";
-// app.use(express.static(path.join(__dirname, 'my-app/build')));
 
 // connects our back end code with the database
 mongoose.connect(
