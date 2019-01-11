@@ -86,10 +86,11 @@ Start Important Part
   background-size: 100% 0.2em;
   background-position: 0 88%;
   transition: background-size 0.25s ease-in;
-  &:hover {
+}
+  .underline--magical:hover {
     background-size: 100% 88%;
   }
-}
+
 
 footer {
   font-family: "Courier New", Courier, monospace;
