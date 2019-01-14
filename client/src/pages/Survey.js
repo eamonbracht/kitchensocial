@@ -161,7 +161,7 @@ class Survey extends Component {
     age: 0,
     student: "",
     dining_plan: "N/A",
-    income: null,
+    income: "",
     cook_per_week: "",
     delivery_per_week: "",
     buy_per_week: "",
@@ -245,7 +245,7 @@ class Survey extends Component {
     const { classes } = this.props;
     return (
       <div>
-        <Billboard
+        <Billboard className = "centered"
           title={"We need your help"}
           subtitle={"Your responses are 100% confidential"}
           backImg={strawberry}
@@ -339,9 +339,9 @@ class Survey extends Component {
                 ))}
               </TextField>
               <TextField
-                id="standard-select-currency"
+                id="standard-password-input"
                 select
-                label="If no, what is your annual income?"
+                label="If no, what is your annual income"
                 className={classes.textField}
                 value={this.state.income}
                 onChange={e => this.setState({ income: e.target.value })}
@@ -350,7 +350,7 @@ class Survey extends Component {
                     className: classes.menu
                   }
                 }}
-                helperText="Please indicate annual income"
+                helperText="Please indicate if you are a student"
                 margin="normal"
               >
                 {income_options.map(option => (
@@ -698,6 +698,11 @@ class Survey extends Component {
                   value="with friends"
                   control={<Radio />}
                   label="With friends"
+                />
+                <FormControlLabel
+                  value="All the above"
+                  control={<Radio />}
+                  label="alone, with friends and with s/o"
                 />
                 >
               </RadioGroup>

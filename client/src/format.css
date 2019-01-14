@@ -275,15 +275,17 @@ body {
 
 
 /* ========================================== */
-/* =============Billboard==================== */
+/* ================Billboard================= */
 /* ========================================== */
 
 .billboard {
     height: 50vh;
     width: 100vw;
-    background-position: 30vw -50px;
+    /* background-position: 30vw -50px; */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
+}
+.centered {
+    background-position: center !important;
 }

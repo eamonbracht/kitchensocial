@@ -61,6 +61,14 @@ router.delete("/deleteData", (req, res) => {
   });
 });
 
+router.get('/:id', function(req, res, next) {
+  Data.findById(req.params.id, function (err, post) {
+    if (err) return next(err);
+    res.json(post);
+  });
+});
+
+
 // this is our create methid
 // this method adds new data in our database
 router.post("/putData", (req, res) => {
