@@ -13,7 +13,6 @@ class billboard extends Component {
     }
     style = {
         backgroundImage: `url(${this.props.backImg})`,
-
     }
     render() { 
         return (  

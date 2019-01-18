@@ -10,10 +10,10 @@ const API_PORT = process.env.PORT || 5000;
 const app = express();
 const router = express.Router();
 
-// this is our MongoDB database
+// MongoDB database
 const dbRoute = "mongodb://eamonbracht:Smokebomb1@ds243054.mlab.com:43054/kitchensocial";
 
-// connects our back end code with the database
+// connect back end code with the database
 mongoose.connect(
   dbRoute,
   { useNewUrlParser: true }
@@ -41,6 +41,7 @@ router.get("/getData", (req, res) => {
   });
 });
 
+
 // this is our update method
 // this method overwrites existing data in our database
 router.post("/updateData", (req, res) => {
@@ -67,6 +68,13 @@ router.get('/:id', function(req, res, next) {
     res.json(post);
   });
 });
+
+// router.get('/getResponses', function(req, res) {
+//   Data.distinct(req.params.query, function (err, post) {
+//     if(err) res.json({ success: false, error: err });
+//     res.json(post);
+//   });
+// });
 
 
 // this is our create methid

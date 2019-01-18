@@ -19,7 +19,7 @@ class Show extends Component {
         axios.get('/api/'+this.props.match.params.id)
           .then(res => {
             this.setState({ data: res.data });
-            console.log(this.state.book);
+            console.log(this.state.data);
           });
       }
       // never let a process live forever 

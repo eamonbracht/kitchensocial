@@ -272,6 +272,23 @@ body {
     z-index: 500;
 }
 
+/* XYPlot {
+    margin-left: 50%;
+    margin-right: 50%;
+     transform: -50% -50%; 
+} */
+
+#graph-special {
+    /* text-align: center; */
+    margin-Left: 5%;
+    text-transform: uppercase;
+
+}
+#graph {
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
 
 
 /* ========================================== */
